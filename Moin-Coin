@@ -30,10 +30,10 @@ contract Moin-Coin is EIP20Interface {
         string _tokenSymbol
     ) public {
         balances[msg.sender] = _initialAmount;               // Give the creator all initial tokens
-        totalSupply = _initialAmount;                        // Update total supply
-        name = _tokenName;                                   // Set the name for display purposes
-        decimals = _decimalUnits;                            // Amount of decimals for display purposes
-        symbol = _tokenSymbol;                               // Set the symbol for display purposes
+        totalSupply = 21000000;                             // Update total supply
+        name = Moin-Coin;                                  // Set the name for display purposes
+        decimals = 10;                                    // Amount of decimals for display purposes
+        symbol = MS;                                     // Set the symbol for display purposes
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
